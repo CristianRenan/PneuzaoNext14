@@ -2,6 +2,23 @@ import AplicacoesPneu from "@/components/aplicacoesPneu/aplicacoesPneu";
 import Carrossel from "@/components/carrossel/carrossel";
 import TablePneu from "@/components/tablePneu/tablePneu";
 
+import type { Metadata } from "next";
+
+export const openGraphImage = {
+  images: [
+    "https://pneuzao.com.br/wp-content/uploads/2023/04/PNEU-XBRI-BRUTUS-AT-1-640x640-1.jpg",
+  ],
+};
+
+export const metadata: Metadata = {
+  title: "PNEU LT205/70R15",
+  description: "teste de meta data",
+  openGraph: {
+    title: "Tit PNEU LT205/70R15",
+    ...openGraphImage,
+  },
+};
+
 export default function PneuPage() {
   return (
     <div className="flex flex-col items-center w-full mt-6">
@@ -12,9 +29,9 @@ export default function PneuPage() {
           <text>Pneu Nome do pneu</text>
         </div>
         <div className="w-full h-auto flex justify-between items-start">
-          <div className="w-2/4 flex justify-center items-center  p-9">
+          <div className="w-2/4 flex justify-center items-center p-9">
             <img
-              className="max-w-full "
+              className="max-w-full"
               src="https://pneuzao.com.br/wp-content/uploads/2023/04/PNEU-XBRI-BRUTUS-AT-1-640x640-1.jpg"
             />
           </div>
@@ -23,9 +40,9 @@ export default function PneuPage() {
               className="max-w-64 -ml-12"
               src="https://pneuzao.com.br/wp-content/uploads/marcas/bkt.png"
             />
-            <text className="text-green-pz-2 font-bold text-3xl">
+            <h1 className="text-green-pz-2 font-bold text-3xl">
               PNEU LT205/70R15 8PR TL 102/99Q BRUTUS T/A XBRI
-            </text>
+            </h1>
             <AplicacoesPneu />
             <TablePneu />
           </div>
