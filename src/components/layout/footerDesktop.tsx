@@ -3,7 +3,7 @@ import SearchIcon from "../icons/search";
 
 export default function FooterDesktop() {
   return (
-    <footer className="w-full h-auto bg-white flex justify-center items-center flex-col gap-2 pt-10 mt-8">
+    <footer className="w-full h-auto bg-white flex justify-center items-center flex-col gap-2 pt-10 ">
       <div className="w-row h-auto flex flex-col items-center gap-5">
         <section className="w-full flex items-start justify-between">
           <img src="./pneuzao-logo.svg" />

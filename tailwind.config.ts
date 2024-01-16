@@ -21,7 +21,8 @@ const config: Config = {
     height: {
       'brand-box':'120px',
       'map-box':'420px',
-      'product-card':'440px'
+      'product-card':'440px',
+      'banner-default':'316px'
     },
     minWidth: {
       'brand-box':'120px',
@@ -29,6 +30,6 @@ const config: Config = {
     }
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
 export default config

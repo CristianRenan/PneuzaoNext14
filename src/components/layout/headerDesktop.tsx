@@ -18,7 +18,9 @@ export default function HeaderDesktop() {
         </a>
       </div>
       <div className="w-row border-black h-10 flex justify-between items-center mb-1">
-        <img src="./pneuzao-logo.svg" className="h-12 cursor-pointer" />
+        <a href="/">
+          <img src="./pneuzao-logo.svg" className="h-12 cursor-pointer" />
+        </a>
         <div className="w-auto border border-gray-300 pl-2 flex rounded-sm">
           <input
             type="text"
