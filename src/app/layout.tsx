@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import HeaderDesktop from "./components/layout/headerDesktop";
-import MenuModelosDesktop from "./components/menuModelos/menuModelosDesktop";
-import FooterDesktop from "./components/layout/footerDesktop";
-
-const inter = Inter({ subsets: ["latin"] });
+import HeaderDesktop from "../components/layout/headerDesktop";
+import FooterDesktop from "../components/layout/footerDesktop";
 
 export const metadata: Metadata = {
   title: "Pneuzao Next14 Tailwind",

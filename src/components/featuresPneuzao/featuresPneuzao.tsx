@@ -4,7 +4,7 @@ export default function FeaturesPneuzao() {
   return (
     <section className="w-full h-20 items-center flex justify-between">
       <div className="flex items-center gap-2 w-feature-box">
-        <CartIcon fill={"#004a1f"} w={"25"} h={"25"} />
+        <CartIcon fill={"red"} w={"25"} h={"25"} />
         <div className="flex flex-col">
           <text className="text-green-pz-2 font-semibold text-xl -mb-1">
             Pneus para uso profissional

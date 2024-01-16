@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tabela da pagina do pneu */
+tr:nth-child(odd) {
+    background: #eaeaea;
+    height: 40px;
+}
+tr:nth-child(even) {
+    background: #ffffff;
+    height: 40px;
+}
+
+td {
+    padding-left: 12px;
+}
