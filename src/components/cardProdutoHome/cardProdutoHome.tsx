@@ -1,6 +1,6 @@
 export default function CardProdutoHome() {
   return (
-    <div className="border border-gray-200 px-4 py-2 bg-white min-w-product-card h-product-card flex flex-col items-center justify-between text-center">
+    <div className="border border-gray-200 px-4 py-2 bg-white h-product-card flex flex-col items-center justify-between text-center">
       <img src="https://pneuzao.com.br/wp-content/uploads/2023/05/PNEU-BLACKLION-BF188-1-300x300.jpg" />
       <img
         className="max-w-36"
