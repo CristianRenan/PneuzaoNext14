@@ -27,6 +27,9 @@ const config: Config = {
     minWidth: {
       'brand-box':'120px',
       'product-card':'255px'
+    },
+    maxWidth: {
+      'product-card':'260px'
     }
     },
   },

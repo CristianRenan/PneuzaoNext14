@@ -6,7 +6,7 @@ export default function FooterDesktop() {
     <footer className="w-full h-auto bg-white flex justify-center items-center flex-col gap-2 pt-10 ">
       <div className="w-row h-auto flex flex-col items-center gap-5">
         <section className="w-full flex items-start justify-between">
-          <img src="./pneuzao-logo.svg" />
+          <img src="/pneuzao-logo.svg" />
           <div className="flex flex-col items-start gap-4">
             <text className="font-medium text-lg">Nossas Lojas</text>
             <div className="flex flex-col items-start text-gray-600 gap-1">
