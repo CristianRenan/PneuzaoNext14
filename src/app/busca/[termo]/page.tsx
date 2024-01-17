@@ -1,17 +1,11 @@
-"use client";
+import CardProdutoHome from "@/components/cardProdutoHome/cardProdutoHome";
+import type { Metadata } from "next";
 
-import CardProdutoHome from "../cardProdutoHome/cardProdutoHome";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Skeleton } from "@/components/ui/skeleton";
-import Autoplay from "embla-carousel-autoplay";
-
-export default function Carrossel() {
+export const metadata: Metadata = {
+  title: "Busca",
+  description: "teste de meta data",
+};
+export default function BuscaPage({ params }: { params: { termo: string } }) {
   const products = [
     {
       productImg:
@@ -112,34 +106,29 @@ export default function Carrossel() {
   ];
 
   return (
-    <section className="w-full h-auto flex flex-col items-center justify-cente gap-4">
-      <div className="w-row  h-auto flex flex-col">
-        <text className="font-medium text-lg">Nossos Destaques</text>
-      </div>
-      <div className="w-row h-auto flex">
-        <Carousel
-          className="w-row"
-          opts={{
-            loop: true,
-            dragFree: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 3000,
-            }),
-          ]}
-        >
-          <CarouselContent className="-ml-1">
-            {products.map((item) => (
-              <CarouselItem key={item.productId} className="pl-0 basis-1/5">
+    <div className="flex flex-col items-center w-full mt-6">
+      <div className="flex flex-col h-auto w-row gap-6">
+        <section className="w-full h-auto flex items-center gap-2 text-gray-500 text-xs">
+          <text>Home</text>
+          <text>{">"}</text>
+          <text>Busca</text>
+          <text>{">"}</text>
+          <text>{params.termo}</text>
+        </section>
+        <section className="w-full h-auto min-h-96 flex items-start gap-7">
+          <div className="flex flex-col border border-black w-60">
+            <text>FILTRO</text>
+          </div>
+          <div className="flex flex-col  w-full">
+            <text>Resultado de busca por {params.termo}</text>
+            <div className="w-full flex flex-wrap">
+              {products.map((item) => (
                 <CardProdutoHome />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }
