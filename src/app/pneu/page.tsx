@@ -1,22 +1,11 @@
 import AplicacoesPneu from "@/components/aplicacoesPneu/aplicacoesPneu";
 import Carrossel from "@/components/carrossel/carrossel";
 import TablePneu from "@/components/tablePneu/tablePneu";
-
 import type { Metadata } from "next";
-
-export const openGraphImage = {
-  images: [
-    "https://pneuzao.com.br/wp-content/uploads/2023/04/PNEU-XBRI-BRUTUS-AT-1-640x640-1.jpg",
-  ],
-};
 
 export const metadata: Metadata = {
   title: "PNEU LT205/70R15",
   description: "teste de meta data",
-  openGraph: {
-    title: "Tit PNEU LT205/70R15",
-    ...openGraphImage,
-  },
 };
 
 export default function PneuPage() {
