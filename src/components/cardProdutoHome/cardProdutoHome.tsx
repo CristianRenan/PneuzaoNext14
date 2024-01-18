@@ -1,6 +1,13 @@
-export default function CardProdutoHome() {
+interface PropTypes {
+  key: string;
+}
+
+export default function CardProdutoHome({ key }: PropTypes) {
   return (
-    <div className="border border-gray-200 max-w-product-card px-4 py-2 bg-white h-product-card flex flex-col items-center justify-between text-center">
+    <div
+      key={key}
+      className="border border-gray-200 max-w-product-card px-4 py-2 bg-white h-product-card flex flex-col items-center justify-between text-center"
+    >
       <img src="https://pneuzao.com.br/wp-content/uploads/2023/05/PNEU-BLACKLION-BF188-1-300x300.jpg" />
       <img
         className="max-w-36"
