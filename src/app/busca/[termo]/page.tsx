@@ -119,11 +119,14 @@ export default function BuscaPage({ params }: { params: { termo: string } }) {
           <div className="flex flex-col border border-black w-60">
             <text>FILTRO</text>
           </div>
-          <div className="flex flex-col  w-full">
-            <text>Resultado de busca por {params.termo}</text>
+          <div className="flex flex-col  w-full gap-3">
+            <text className="font-medium text-lg">
+              Resultado de busca por:{" "}
+              <span className="text-green-pz-2 uppercase">{params.termo}</span>
+            </text>
             <div className="w-full flex flex-wrap">
               {products.map((item) => (
-                <CardProdutoHome />
+                <CardProdutoHome key={item.productId} />
               ))}
             </div>
           </div>

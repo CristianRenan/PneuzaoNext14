@@ -132,7 +132,7 @@ export default function Carrossel() {
           <CarouselContent className="-ml-1">
             {products.map((item) => (
               <CarouselItem key={item.productId} className="pl-0 basis-1/5">
-                <CardProdutoHome />
+                <CardProdutoHome key={item.productId} />
               </CarouselItem>
             ))}
           </CarouselContent>
